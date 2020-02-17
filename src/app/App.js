@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import {Button} from 'reactstrap';
+import './app.scss';
 
 function App() {
   return (
@@ -10,14 +11,14 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
+        <button className='btn btn-danger'>HELP ME</button>
+        <Button 
+          tag="a"
+          color="success"
+          size="large"
+          href="http://timothyharley.com"
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+          >ME!</Button>
       </header>
     </div>
   );
